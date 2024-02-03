@@ -1,0 +1,131 @@
+<div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="num">
+      <th mat-header-cell *matHeaderCellDef>Số thứ tự</th>
+      <td mat-cell *matCellDef="let element">{{element.num}}</td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="year">
+      <th mat-header-cell *matHeaderCellDef>Năm</th>
+      <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+  
+    <!-- Progress Column -->
+    <ng-container matColumnDef="mistake">
+      <th mat-header-cell *matHeaderCellDef>Lỗi lầm</th>
+      <td mat-cell *matCellDef="let element">{{element.mistake}}</td>
+    </ng-container>
+  
+    <!-- Color Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>mô tả</th>
+      <td mat-cell *matCellDef="let element" [style.color]="element.color">{{element.description}}</td>
+    </ng-container>
+    <!-- Color Column -->
+    <ng-container matColumnDef="fixed">
+      <th mat-header-cell *matHeaderCellDef>Sữa chữa</th>
+      <td mat-cell *matCellDef="let element" [style.color]="element.color">{{element.fixed}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <h1>vô vị trong 1 ngày</h1>
+  <p>
+      Nhiều thứ thay đổi cách nhận định tin tưởng vào ai đó dường như nó không còn nhiều như xưa nữa. Nhừng lý thuyết t nghĩ rằng nó sẽ đúng thì nó không còn đúng nữa
+      <br/>
+      mệt mỏi không mệt mỏi chứ. Những hoài nghi như giằng xé khối óc đôi tay khi mà những thứ vô nghĩa hài hước đang ôm lấy bản thân mình
+      <br/>
+      có buồn không. buồn chứ. Bản thân luôn định chạy theo mọi người để học hỏi nhưng học hỏi hình như chả có gì ngoài việc nhậu biết thêm vài thứ trong công ty để nghi nghờ xong rồi thôi
+      <br/>
+      Đáng trách không. Dáng chứ. khi mà mọi thứ tưởng như biết hết nhưng thật sự không biết gì. mọi thứ dường như hiểu dường như thấu nhưng định lực không cho phép làm như thế hay rõ hơn là không có định lực để đi tới cuối
+      <br/>
+      Ăn năn không. có ăn năng chứ. Trong cuộc vui cuộc chơi thì đâu nghĩ tới gì ngoài nguôi ngoai 1 xíu. Chẳng qua là để cho nó nhiều đến mức không thể biết làm thế nào để vượt qua nó
+      <br/> 
+      Đau thương không cũng thế. có buồn thì có đau thương. Thương mẹ bệnh nhưng có làm thì dường như liêm sỹ sỉ diện dường như mất hết. Vẫn biết buôn bỏ sỹ diện xuống để kiếm tiền, Nhưng rồi tự trongj cũng không còn
+      <br/>
+      hổ báo thì sao. Cũng như cái shit bởi vì. Chính mình là thực thể chịu trách nhiệm cho nó, nó làm mính xấu đi. Mình đâu muốn nóng như thế 
+      <br/>
+      Mất mát hả. sao nhỉ? có không nhỉ? chắc là nóng giận người ta mất khôn. Nên mất bản thân thật là 1 điều tồi tệ
+      <br/>
+      khóc ư? có gì để khóc
+      <br> 
+      Rốt cuộc thì chuẩn bị gì? cho những ngày sắp tới
+      Bị mắng có sợ không? chắc là không?
+      có le4 cái sợ nhất là bị đánh giá năng lực kém. thì còn vào bậc trước các bạn
+      năm nay phải khắc phục từng cái làm mình thấy bất an khi có những plan dài. là phải cố gắng hơn để những thứ làm mình sợ, mơ hồ phải tránh xa
+      
+  </p>
+
+  <h1> mọi chuyện sẽ tiếp diễn và tiếp diễn cho đến khi  bắt buộc bản thân phải thay đổi</h1>
+  <p>
+    4 năm qua thì có tiến bộ nhưng 1 vài lỗi không thay đổi thì cuộc đời mãi mãi sẽ ở dưới đáy. Nhìn người xung quanh đã không còn ý nghĩa nhiều nữa. 
+    Có tuổi rồi. Nhưng xốc nỗi như con nít là thế nào nhỉ?
+    May mắn cuối năm có 1 cú vấp để có dịn nhìn lại bản thân tồi tệ thế nào 
+  </p>
+  <p>
+    Mất 4 năm để nhìn thấy rằng mình như trẻ con thế nào. Cám ơn người bạn ấy đã cho 1 cơ hội để nhìn nhận lại 1 cách sâu sắc
+    trước đây có thấy nhưng chỉ là nhận định hời hợt và chưa muốn làm quá lên làm sâu lên. Cứ khi nào nỗi đau qua thì tất cả mọi chuyện cũng qua.
+    để rồi vừa làm đã thấy mình ngu ngốc thế nào. Mọi lời nói đều như cc nếu không tự thay đổi mình. Chính mình không cứu lấy mình thì không ai cứu nỗi
+  </p>
+  <p>
+    Trước đây nghĩ sống như hiện tại là tự do, không kỷ luật không nghiêm khắc với bản thân trong khi bản thân mình chưa thật sự tốt. mình nghĩ cần có mỗi quan hệ tốt thì sẽ tốt chăng
+    Không mình sai cmnr. Khi mà mình chưa đủ giỏi thì chơi với người giỏi chỉ là áp lực
+  </p>
+  <p>Trước đây cứ nghĩ lối sống khép kín như thằng cái anh mà mình không thích thì là vua là trùm nhưng quanh đi quảnh lại thì chính mình là người sống như cc, 
+    mọi thứ không ổn, rồi mới nhận ra sống như anh đó mới gọi là bản lĩnh. Mọi người có thể không thích nhưng biết từ chối, biết tiến biết thủ khi anh ấy còn chưa giỏi
+    cảm thấy vui thấy hạnh phúc không khi mà mãi mãi chỉ dừng ở 1 đứa trẻ to xác không chịu lớn
+  </p> 
+  <p>
+    lúc này đây phải biết từ chối rồi. Tiền là cái thứ mong muốn chứ không phải là những cuộc vui
+  </p>
+  <p>------------------------------------------------------------------------</p>
+  <h1 class="text-2x1"> của nợ gì nữa đây</h1>
+  <p> tại sao phải cố gắng fix để sửa cái đống của nợ này???</p>
+  <p>M đã hứa với bản thân điều gì chẳng lẽ quên sao</p>
+  <br/>
+  <p>là thay đổi, cuối cùng làm được gì rồi, chẳng được gì cả ngoài những lòi than vãn ngu xuẩn với bạn bè</p>
+  <p>Ngoài những thứ cấu xé trong tim gan</p>
+  <p>Ngoài những gì m tự chửi mắng m là thằng tồi, tự tin từ đâu có đâu có cái gì là tự nhiên</p>
+  <p> ngủ muộn xem điện thoại rồi không chịu thức, ăn cơm xong lại lướt điện thoại kỹ luật ở đâu, tập trung ở đâu, luyênj tập thế nào, hay nỗi đau vừa hết lại quên tiếp giống như nhứng lần ở HMIS</p>
+  <p>Có lẽ làm việc không vui vẻ gì, nhưng nhậu nhẹt có làm mình vui không, cả đống thứ cần phải làm chờ m học, để chi, 
+    bản thân đã không tự sống cho mình, mà cho những ai cần m phụ cần m giúp, vậy nên nếu không đủ giỏi tự mình gục ngã thì phải làm sao 
+    đã từng chửi anh PM lần vì kém, m định chửi tiếp lần 2 ư, tại sao không cố gắng để giỏi và đánh giá công việc để dễ thở hơn, 
+    mọi thứ không còn là những cuộc vui chơi khi m đã lớn, nỗi sợ sẽ che khuất đi niềm vui nếu cứ chơi mãi, rồi tự hỏi tại sao không bắng người này không bằng người kia rồi sợ sẽ phải bị bỏ lại giống như bao lầ
+    cố gắng chỉ được đền đắp khi kỹ luật, tập trung tinh thần làm việc, cứ sao nhãn mãi, nghĩ vẫn vơ mãi thì làm được gì, Khi gặp vấn đề có cố gắng tìm cách giải quyết chưa 
+    mong6 lung làm gì, đau khổ làm gì, đừng nhắc mình cố gắng nữa, phải làm phải làm, không than vãn với ai nữa. Mạnh mẽ lên rồi sẽ tự tin thôi
+  </p>
+  <p>làm việc cũng chỉ là công cụ thôi, công cụ kiếm tiền, chỉ là công cụ thôi, công cụ thì qua load là được chăng, sống ở cuộc sống ấp lực này dần cũng đánh mất 1 vài thứ
+    Tuy nhiên là mình sẽ không đánh mất mục tiêu của cuộc đời mình
+  </p>
+  ------------------------------------------------------------------------
+  <h1>Hello</h1>
+  <h1>Hello</h1>
+  <h1>Hello</h1>
+      <p>hôm nay lại bị từ chối , nên viết vào đây có lẽ cô gái ấy đã dần trưởng thành và thay đôi theo cái cách tích cực nhìn vào cuộc sống mà cô gai ấy thích, có lẽ đi nhiều mở rộng mỗi quan hệ nhiều quen biết nhiều chăng
+        bạn mới ứ có lẽ là không nên thế vì mọi thứ thật tốt nếu chúng ta cần quan tâm cần học những gì mà chúng ta biết chăng 
+        tốt hơn là tăng cường nội tại 1 năm sau hy vọng nhìn lại những dòng tâm thư này t sẽ không cưới mà chỉ nhìn nó như 1 dấu chấm để thay dổi cuộc sống, vì cuộc sống không thay đổi ta qua những ly bia 
+        tình cảm thì thuận theo tự nhiên là chắc rồi. dần phải trưởng thành quen với mệt mỏi không than van, việc gì làm dược thì làm không làm được thì từ chối, việc có thể thì cố sức mà là t sẽ không khóc không cưới nhìn mọi việc theo công việc việc cần hỏi thì nhiều chuyện để bản thân không chịu theitej
+        việc không cần hỏi thì không hỏi, ai cần nói sẽ tự nói, không cần thiêt phải vì ai, thứ m muốn quý nhất phải chính là bản thân m, tập ngoài công việc thì không nói chuyện vs ai ngoài gia đình mình , 
+        chỉ khi nào như thế thì mới không nói sai không kết bạn với ngưới lạ để học cách nói chuyện sao cho người khác không thấy sự trẻ con của mình nữa
+        
+      </p>
+      <h2>p2 thành công là gì đó xa xỉ với mình chăng </h2>
+      <p>
+        anh Cường ơi, em có cái này muốn kể anh Cường nghe. em có 2 cái tin nhắn này làm em cứ suy nghĩ mãi cũng chính vì 2 tn này mà bữa khi anh nói " cay thì làm sao? cũng ngậm mẹ mồm"
+        thật ra Duy hồi nảy nó nói em sai là đùng e cãi nó vì em chống chê nguyên nhân thật em không muốn kể cái nguyên nhân thật sự em giấu mà thôi, 
+        . Em không biết anh sắp chửi em cái gì. Nhưng mà cuối cùng thì em vẫn chọn anh là nơi em tin tưởng vì em nhớ em từng hỏi anh "sao em cứ tự ti mãi thế anh?" anh nói là "còn trẻ đi chơi để trải nghiệm đi em".
+        nó như mở cánh cửa với em. em thấy vui hơn thấy thoải mái hơn. Nhưng mà gần xxđây em thấy có cảm giác em đang chỉ nghĩ cho bản thân, em chưa lớn, em chưa biết bản thân muốn gì. Cũng kiểu em không thể nhứ thế này mãi được
+        tin nhắn của bản chỉ đơn giản nó là lời cảnh tỉnh em hay hoạ chăng là em thật sự như vậy. em cũng không biết tại sao lại nói vs anh nữa, không biết anh sẽ có chửi em vì những vấn đề vớ vẫn thế này và tại sao lại tin anh thế, có lẽ với 
+        anh hay mấy anh trong bàn nhậu của mình đều là vấn dề nó không lớn. dạo này em hay  ngẩn ngơ hay nhín về cái gì đó xa xăm, nhìn mặt không vui hay ngáo ngào, em không biết nói sao nữa em hiện tại nghĩ mình là ai, cứ làm như thế này liệu có ổn 30 sẽ làm gì
+        hay chỉ đơn giản mình là kẻ thấp kém nhất trong nhóm. Em xin lỗi vì kéo anh vào cái đám bòng bong suy nghĩ của em, Nhưng ko biết sao em chỉ muốn kể a Cường nghe 
+      </p>
+</div>
+
+<div>
+   món vật nào cũng có giá trị của nó, cũng có chủ nhân nó, không  trách tại sao không giữ nó, giá trị của nó không đúng thì đó là lý do nó không 
+   thuộc về bạn. vì thế là Duyên ắc sẽ ở 
+   
+</div>

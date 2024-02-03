@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'tellingwebapp';
+  title = 'myBlog';
 }
+ 
